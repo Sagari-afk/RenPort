@@ -1,0 +1,41 @@
+.section-first {
+  border-radius: 0px 0px 48px 48px;
+  background: #141517;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  height: 800px;
+}
+p {
+  margin: 0;
+}
+header {
+  padding-top: 22px;
+}
+.nav > p:nth-child(1),
+.sign > p:nth-child(1) {
+  text-align: end;
+  padding-left: 0;
+}
+.nav > p:nth-child(2),
+.sign > p:nth-child(2) {
+  text-align: start;
+  padding-right: 0;
+}
+.logo > p {
+  padding-right: 0;
+}
+.logo,
+.sign {
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
+}
+.nav {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.sign,
+.nav {
+  padding-left: 0;
+  padding-right: 0;
+}
