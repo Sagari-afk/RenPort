@@ -18,11 +18,11 @@
     <section class="head">
       <!-- NAV STARTS -->
       <nav class="container navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse left">
+        <div class="col-4 collapse navbar-collapse left">
           <a class="navbar-brand" href="#">REN<strong>PORT</strong></a>
         </div>
 
-        <div class="collapse navbar-collapse center" id="navbarText">
+        <div class="col-4 collapse navbar-collapse center">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Rentals</a>
@@ -33,7 +33,7 @@
           </ul>
         </div>
 
-        <div class="collapse navbar-collapse right">
+        <div class="col-4 collapse navbar-collapse right">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Sign in</a>
@@ -46,12 +46,28 @@
       </nav>
       <!-- NAV ENDS -->
 
-      <p>Discover the freedom of hassle-free vehicle rentals at RenPort.</p>
-      <h1>Rent a car wherever or whenever you need</h1>
+      <!-- MAIN STARTS -->
+      <div class="container main">
+        <div class="secundary-text">
+          <p>Discover the freedom of hassle-free vehicle rentals at RenPort.</p>
+        </div>
+        <div class="main-text">
+          <h1>Rent a car wherever or whenever you need</h1>
+        </div>
 
-      <div class="button-see-rent">
-        <p>See rentals</p>
-        <img src="/asets/imgs/see-rent.png" alt="see-rent" />
+        <button class="button-see-rent row">
+          <div class="col"><p>See rentals</p></div>
+          <div class="col">
+            <img
+              class="img-fluid"
+              src="/asets/imgs/see-rent.png"
+              alt="see-rent"
+              width="15px"
+              height="15px"
+            />
+          </div>
+        </button>
+        <!-- MAIN ENDS -->
       </div>
     </section>
 

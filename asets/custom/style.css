@@ -2,10 +2,12 @@
   --primary-accent: #39a4f2;
   --main-dark: #141517;
   --main-light: #f3f3f3;
+  --font-popins: "Popppins";
+  --font-grotesk: "Space Grotesk";
 }
 
 .head {
-  /* background: var(--main-dark); */
+  background: var(--main-dark);
 }
 
 /* NAV STARTS */
@@ -18,6 +20,7 @@ nav {
   gap: 8px;
   font-family: Poppins;
   font-size: 18px;
+  position: fixed;
 }
 nav > * {
   padding: 4px;
@@ -47,3 +50,12 @@ nav > .right {
   background: var(--primary-accent);
 }
 /* NAV ENDS */
+.main {
+  color: white;
+  margin-top: 239px;
+  justify-content: center;
+}
+.main * {
+  text-align: center;
+}
+/* MAIN STARTS */
