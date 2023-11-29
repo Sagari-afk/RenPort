@@ -2,12 +2,21 @@
   --primary-accent: #39a4f2;
   --main-dark: #141517;
   --main-light: #f3f3f3;
-  --font-popins: "Popppins";
-  --font-grotesk: "Space Grotesk";
 }
 
-.head {
+.bg-dark-cast {
   background: var(--main-dark);
+}
+.bg-primary-cast {
+  background: var(--primary-accent);
+}
+.primary-text {
+  font-family: "Space Grotesk";
+  font-size: 68px !important;
+}
+.secundary-text {
+  font-family: "Space Grotesk";
+  font-size: 24px !important;
 }
 
 /* NAV STARTS */
@@ -33,7 +42,8 @@ nav a {
 }
 nav > .left {
   border-radius: 4px;
-  border: 2px solid rgba(255, 255, 255, 0.05);
+  outline: 2px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -2px;
 }
 nav > .center {
   justify-content: center;
@@ -43,19 +53,35 @@ nav > .center {
 nav > .right {
   justify-content: right;
   border-radius: 4px;
-  border: 2px solid rgba(255, 255, 255, 0.05);
+  outline: 2px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -2px;
 }
 
-#sign-up {
-  background: var(--primary-accent);
-}
 /* NAV ENDS */
 .main {
   color: white;
   margin-top: 239px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  gap: 48px;
 }
 .main * {
   text-align: center;
+}
+.button-see-rent {
+  background: none !important;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 99px;
+  padding: 16px 36px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.button-see-rent p {
+  margin: 0;
+  font-size: 24px;
 }
 /* MAIN STARTS */

@@ -9,13 +9,19 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <section class="head">
+    <section class="bg-dark-cast">
       <!-- NAV STARTS -->
       <nav class="container navbar navbar-expand-lg navbar-light">
         <div class="col-4 collapse navbar-collapse left">
@@ -39,7 +45,7 @@
               <a class="nav-link" href="#">Sign in</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="sign-up" href="#">Sign up</a>
+              <a class="nav-link btn-primary-cast" href="#">Sign up</a>
             </li>
           </ul>
         </div>
@@ -48,22 +54,27 @@
 
       <!-- MAIN STARTS -->
       <div class="container main">
-        <div class="secundary-text">
-          <p>Discover the freedom of hassle-free vehicle rentals at RenPort.</p>
+        <div>
+          <p class="secundary-text">
+            Discover the freedom of hassle-free vehicle rentals at RenPort.
+          </p>
         </div>
-        <div class="main-text">
-          <h1>Rent a car wherever or whenever you need</h1>
+        <div>
+          <h1 class="primary-text">
+            Rent a car
+            <span style="color: var(--primary-accent)">wherever</span> or
+            <span style="color: var(--primary-accent)">whenever</span> you need
+          </h1>
         </div>
 
-        <button class="button-see-rent row">
-          <div class="col"><p>See rentals</p></div>
-          <div class="col">
+        <button class="btn btn-primary button-see-rent">
+          <div class=""><p>See rentals</p></div>
+
+          <div class="">
             <img
               class="img-fluid"
               src="/asets/imgs/see-rent.png"
               alt="see-rent"
-              width="15px"
-              height="15px"
             />
           </div>
         </button>
