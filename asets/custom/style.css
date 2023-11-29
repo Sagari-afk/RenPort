@@ -2,6 +2,8 @@
   --primary-accent: #39a4f2;
   --main-dark: #141517;
   --main-light: #f3f3f3;
+  --input-color: rgba(239, 239, 239, 0.50);
+  --form-background: rgba(255, 255, 255, 0.05);
 }
 
 .bg-dark-cast {
@@ -98,8 +100,8 @@ nav > .right {
 }
 .radio-b {
   margin-top: 157px;
+  padding-left: 65px;
   display: flex;
-  padding-left: 0px;
   align-items: center;
   gap: 8px;
   align-items: flex-start;
@@ -132,10 +134,15 @@ input[type="radio"] {
 }
 
 /* FIND 2 STARTS */
+.loc-date-select-container{
+  border: 1px solid rgba(255, 255, 255, 0.30); 
+  border-radius: 67px; /* inner border-radius (59px) + self padding (8px) */
+  padding: 8px;
+}
 .loc-date-select {
   display: flex;
   align-items: stretch;
-  padding: 24px;
+  padding: 16px;
   gap: 9px;
 
   border-radius: 59px;
@@ -145,23 +152,36 @@ input[type="radio"] {
   font-size: 18px;
   color: #fff;
 }
-.loc-date-select div {
+.loc-date-select > div {
   display: flex;
   flex-direction: column;
   width: 100%;
+  justify-content: center;
+  padding: 17px;
 }
 .form-select {
-  -webkit-appearance: none;
-  appearance: none;
-  background: none;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+  /* dark backgrounds force
+  firefox to run select 
+  options in dark mode */
+  background: #202123; 
   border-radius: 20px !important;
   border: 2px solid rgba(255, 255, 255, 0.1);
+  color: var(--input-color);
+}
+.form-select option{
+ background-color: var(--form-background);
+ color: white;
 }
 .loc-date-select input {
   -webkit-appearance: none;
   appearance: none;
   background: none;
   text-decoration: none;
+  color: var(--input-color);
 }
 input {
   font-family: "Roboto", sans-serif;
