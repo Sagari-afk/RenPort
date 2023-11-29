@@ -26,6 +26,7 @@ nav {
   backdrop-filter: blur(8px);
 
   padding: 8px !important;
+  padding-top: 22px !important;
   gap: 8px;
   font-family: Poppins;
   font-size: 18px;
@@ -84,12 +85,16 @@ nav > .right {
   margin: 0;
   font-size: 24px;
 }
+.button-see-rent:hover {
+  border-color: var(--primary-accent);
+}
 /* MAIN ENDS */
 
-/* FIND STARTS */
-.find {
+/* FIND1 STARTS*/
+.choose {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
 }
 .radio-b {
   margin-top: 157px;
@@ -107,6 +112,7 @@ input[type="radio"] {
 
 .radio-b label {
   font-family: Poppins;
+  font-weight: 300;
   background: none;
   padding: 8px 16px;
 
@@ -116,4 +122,67 @@ input[type="radio"] {
 .radio-b > .active {
   background: var(--primary-accent);
   border: 0px;
+}
+/* FIND 1 ENDS */
+
+.find {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* FIND 2 STARTS */
+.loc-date-select {
+  display: flex;
+  align-items: stretch;
+  padding: 24px;
+  gap: 9px;
+
+  border-radius: 59px;
+  background: rgba(255, 255, 255, 0.05);
+  font-family: Poppins;
+  font-weight: 300;
+  font-size: 18px;
+  color: #fff;
+}
+.loc-date-select div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border-radius: 20px !important;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.loc-date-select input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  text-decoration: none;
+}
+input {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  border: none;
+  border-radius: 0.25rem;
+  border: 1px solid transparent;
+  line-height: 1.5rem;
+  padding: 0;
+  font-size: 1rem;
+  color: rgba(174, 174, 174, 0.5);
+  width: 100%;
+  margin-top: 0.5rem;
+}
+input:focus {
+  outline: none;
+}
+.find-button {
+  background: none;
+  border: none;
+}
+.find-button:hover {
+  background: none;
 }

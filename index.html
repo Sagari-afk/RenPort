@@ -9,14 +9,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@500&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -82,68 +84,97 @@
       <!-- MAIN ENDS -->
 
       <!-- FIND STARTS -->
-      <div class="container col-7 find">
-        <div class="btn-group btn-group-toggle radio-b" data-toggle="buttons">
-          <label class="btn btn-secondary active">
-            <input
-              type="radio"
-              name="options"
-              id="option1"
-              autocomplete="off"
-              checked
-            />
-            Car
-          </label>
-          <label class="btn btn-secondary">
-            <input
-              type="radio"
-              name="options"
-              id="option2"
-              autocomplete="off"
-            />
-            Bike
-          </label>
-          <label class="btn btn-secondary">
-            <input
-              type="radio"
-              name="options"
-              id="option3"
-              autocomplete="off"
-            />
-            eCar
-          </label>
-          <label class="btn btn-secondary">
-            <input
-              type="radio"
-              name="options"
-              id="option1"
-              autocomplete="off"
-              checked
-            />
-            eBike
-          </label>
-          <label class="btn btn-secondary">
-            <input
-              type="radio"
-              name="options"
-              id="option1"
-              autocomplete="off"
-              checked
-            />
-            Camping
-          </label>
-          <label class="btn btn-secondary">
-            <input
-              type="radio"
-              name="options"
-              id="option1"
-              autocomplete="off"
-              checked
-            />
-            Track toys
-          </label>
+      <form class="container find">
+        <div class="col-7 col-7 choose">
+          <div class="btn-group btn-group-toggle radio-b" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              Car
+            </label>
+            <label class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option2"
+                autocomplete="off"
+              />
+              Bike
+            </label>
+            <label class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option3"
+                autocomplete="off"
+              />
+              eCar
+            </label>
+            <label class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              eBike
+            </label>
+            <label class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              Camping
+            </label>
+            <label class="btn btn-secondary">
+              <input
+                type="radio"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              Track toys
+            </label>
+          </div>
         </div>
-      </div>
+
+        <div class="loc-date-select">
+          <div class="location">
+            <label for="location">Location:</label>
+            <select class="form-select" aria-label="location">
+              <option value="Zilina">Zilina</option>
+              <option value="Bratislava">Bratislava</option>
+              <option value="Kosice">Kosice</option>
+            </select>
+          </div>
+
+          <div class="starts">
+            <label for="starts">Pick up date:</label>
+            <input type="date" id="starts" name="starts" />
+          </div>
+
+          <div class="ends">
+            <label for="ends">Drop-off date:</label>
+            <input type="date" id="ends" name="ends" />
+          </div>
+
+          <div>
+            <button class="find-button btn btn-primary">
+              <img src="/asets/imgs/find-icon.svg" alt="find-icon" />
+            </button>
+          </div>
+        </div>
+      </form>
       <!-- FIND ENDS -->
     </section>
 
