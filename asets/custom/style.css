@@ -29,7 +29,6 @@ nav {
   gap: 8px;
   font-family: Poppins;
   font-size: 18px;
-  position: fixed;
 }
 nav > * {
   padding: 4px;
@@ -56,8 +55,9 @@ nav > .right {
   outline: 2px solid rgba(255, 255, 255, 0.05);
   outline-offset: -2px;
 }
-
 /* NAV ENDS */
+
+/* MAIN STARTS */
 .main {
   color: white;
   margin-top: 239px;
@@ -84,4 +84,36 @@ nav > .right {
   margin: 0;
   font-size: 24px;
 }
-/* MAIN STARTS */
+/* MAIN ENDS */
+
+/* FIND STARTS */
+.find {
+  display: flex;
+  align-items: flex-start;
+}
+.radio-b {
+  margin-top: 157px;
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  gap: 8px;
+  align-items: flex-start;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.radio-b label {
+  font-family: Poppins;
+  background: none;
+  padding: 8px 16px;
+
+  border-radius: 20px !important;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.radio-b > .active {
+  background: var(--primary-accent);
+  border: 0px;
+}
