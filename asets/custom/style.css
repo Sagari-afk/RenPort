@@ -1,41 +1,49 @@
-.section-first {
-  border-radius: 0px 0px 48px 48px;
-  background: #141517;
-  color: #fff;
+:root {
+  --primary-accent: #39a4f2;
+  --main-dark: #141517;
+  --main-light: #f3f3f3;
+}
+
+.head {
+  /* background: var(--main-dark); */
+}
+
+/* NAV STARTS */
+nav {
+  border-radius: 10px;
+  background: rgba(20, 21, 23, 0.8);
+  backdrop-filter: blur(8px);
+
+  padding: 8px !important;
+  gap: 8px;
   font-family: Poppins;
   font-size: 18px;
-  height: 800px;
 }
-p {
-  margin: 0;
+nav > * {
+  padding: 4px;
+  color: white;
 }
-header {
-  padding-top: 22px;
+nav a {
+  color: white !important;
+  padding: 6px 24px !important;
+  border-radius: 32px;
 }
-.nav > p:nth-child(1),
-.sign > p:nth-child(1) {
-  text-align: end;
-  padding-left: 0;
-}
-.nav > p:nth-child(2),
-.sign > p:nth-child(2) {
-  text-align: start;
-  padding-right: 0;
-}
-.logo > p {
-  padding-right: 0;
-}
-.logo,
-.sign {
+nav > .left {
   border-radius: 4px;
   border: 2px solid rgba(255, 255, 255, 0.05);
 }
-.nav {
+nav > .center {
+  justify-content: center;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.05);
 }
-.sign,
-.nav {
-  padding-left: 0;
-  padding-right: 0;
+nav > .right {
+  justify-content: right;
+  border-radius: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.05);
 }
+
+#sign-up {
+  background: var(--primary-accent);
+}
+/* NAV ENDS */
