@@ -275,3 +275,23 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .card img {
   margin: -31.5px;
 }
+
+/* ABOUT */
+.section-3 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 138px;
+}
+.section-3 > div > p {
+  width: 635px;
+  align-items: center;
+  margin: 0;
+}
+.section-3 div {
+  align-items: stretch;
+  color: #141517;
+
+  font-family: Poppins;
+  font-size: 24px;
+}
