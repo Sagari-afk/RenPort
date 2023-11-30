@@ -2,7 +2,7 @@
   --primary-accent: #39a4f2;
   --main-dark: #141517;
   --main-light: #f3f3f3;
-  --input-color: rgba(239, 239, 239, 0.50);
+  --input-color: rgba(239, 239, 239, 0.5);
   --form-background: rgba(255, 255, 255, 0.05);
 }
 
@@ -12,13 +12,22 @@
 .bg-primary-cast {
   background: var(--primary-accent);
 }
-.primary-text {
+h1 {
   font-family: "Space Grotesk";
   font-size: 68px !important;
+}
+h2 {
+  color: #404345;
+  font-family: "Space Grotesk";
+  font-size: 42px;
 }
 .secundary-text {
   font-family: "Space Grotesk";
   font-size: 24px !important;
+}
+.border-bn {
+  border-radius: 0px 0px 48px 48px;
+  padding-bottom: 100px;
 }
 
 /* NAV STARTS */
@@ -134,8 +143,8 @@ input[type="radio"] {
 }
 
 /* FIND 2 STARTS */
-.loc-date-select-container{
-  border: 1px solid rgba(255, 255, 255, 0.30); 
+.loc-date-select-container {
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 67px; /* inner border-radius (59px) + self padding (8px) */
   padding: 8px;
 }
@@ -152,29 +161,29 @@ input[type="radio"] {
   font-size: 18px;
   color: #fff;
 }
-.loc-date-select > div {
+.loc-date-select div {
   display: flex;
+  gap: 12px;
   flex-direction: column;
   width: 100%;
   justify-content: center;
   padding: 17px;
 }
 .form-select {
-  -webkit-appearance:none;
-  -moz-appearance:none;
-  -ms-appearance:none;
-  appearance:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
   /* dark backgrounds force
   firefox to run select 
   options in dark mode */
-  background: #202123; 
-  border-radius: 20px !important;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: #202123;
+  border: none !important;
   color: var(--input-color);
 }
-.form-select option{
- background-color: var(--form-background);
- color: white;
+.form-select option {
+  background-color: var(--form-background);
+  color: white;
 }
 .loc-date-select input {
   -webkit-appearance: none;
@@ -188,7 +197,7 @@ input {
   display: block;
   border: none;
   border-radius: 0.25rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   line-height: 1.5rem;
   padding: 0;
   font-size: 1rem;
@@ -205,4 +214,22 @@ input:focus {
 }
 .find-button:hover {
   background: none;
+}
+.form-select,
+#starts,
+#ends {
+  padding: 0;
+  margin: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: none;
+  /* width: 100%; */
+}
+
+/* SECTION 2 STARTS (CARDS) */
+.section-2 {
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
