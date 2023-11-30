@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RenPort</title>
-    <link rel="stylesheet" href="/asets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/asets/custom/style.css" />
+    <link rel="stylesheet" href="./asets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./asets/custom/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -148,30 +148,32 @@
           </div>
         </div>
 
-        <div class="loc-date-select">
-          <div class="location">
-            <label for="location">Location:</label>
-            <select class="form-select" aria-label="location">
-              <option value="Zilina">Zilina</option>
-              <option value="Bratislava">Bratislava</option>
-              <option value="Kosice">Kosice</option>
-            </select>
-          </div>
-
-          <div class="starts">
-            <label for="starts">Pick up date:</label>
-            <input type="date" id="starts" name="starts" />
-          </div>
-
-          <div class="ends">
-            <label for="ends">Drop-off date:</label>
-            <input type="date" id="ends" name="ends" />
-          </div>
-
-          <div>
-            <button class="find-button btn btn-primary">
-              <img src="/asets/imgs/find-icon.svg" alt="find-icon" />
-            </button>
+        <div class="loc-date-select-container">
+          <div class="loc-date-select">
+            <div class="location">
+              <label for="location">Location:</label>
+              <select class="form-select" aria-label="location">
+                <option value="Zilina">Zilina</option>
+                <option value="Bratislava">Bratislava</option>
+                <option value="Kosice">Kosice</option>
+              </select>
+            </div>
+  
+            <div class="starts">
+              <label for="starts">Pick up date:</label>
+              <input type="date" id="starts" name="starts" />
+            </div>
+  
+            <div class="ends">
+              <label for="ends">Drop-off date:</label>
+              <input type="date" id="ends" name="ends" />
+            </div>
+  
+            <div>
+              <button class="find-button btn btn-primary">
+                <img src="./asets/imgs/find-icon.svg" alt="find-icon" />
+              </button>
+            </div>
           </div>
         </div>
       </form>
