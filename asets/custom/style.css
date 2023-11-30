@@ -21,6 +21,12 @@ h2 {
   font-family: "Space Grotesk";
   font-size: 42px;
 }
+h3 {
+  font-family: Poppins;
+  font-size: 48px;
+  color: #404345;
+  margin: 0;
+}
 .secundary-text {
   font-family: "Space Grotesk";
   font-size: 24px !important;
@@ -211,9 +217,13 @@ input:focus {
 .find-button {
   background: none;
   border: none;
+  align-items: center;
 }
 .find-button:hover {
   background: none;
+}
+.find-button:active {
+  filter: brightness(70%);
 }
 .form-select,
 #starts,
@@ -232,4 +242,36 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   flex-direction: column;
   gap: 48px;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.row1,
+.row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.card {
+  border-radius: 15.75px;
+  width: calc(100% / 3);
+  border: none;
+  background: rgba(243, 243, 243, 1);
+
+  padding: 31.5px;
+}
+.text-in-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.text-in-card > p {
+  color: var(--primary-accent);
+  font-family: Space Grotesk;
+  font-size: 21px;
+}
+.card img {
+  margin: -31.5px;
 }

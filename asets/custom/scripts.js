@@ -1,7 +1,7 @@
 function main() {
   const btns = document.querySelectorAll(".find-button");
   btns.forEach((btn) => {
-    btn.addEventListener("click", findVehicle());
+    btn.addEventListener("click", findVehicle);
   });
 }
 
