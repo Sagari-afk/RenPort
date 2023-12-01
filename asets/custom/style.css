@@ -30,47 +30,6 @@
 }
 /* MAIN ENDS */
 
-/* FIND1 STARTS*/
-.choose {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.radio-b {
-  margin-top: 8.65rem;
-  padding-left: 4.06rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  align-items: flex-start;
-}
-input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
-.radio-b label {
-  font-family: Poppins;
-  font-weight: 300;
-  background: none;
-  padding: 0.5rem 1rem;
-
-  border-radius: 1.25rem !important;
-  border: 2px solid rgba(255, 255, 255, 0.1);
-}
-.radio-b > .active {
-  background: var(--primary-accent);
-  border: 0rem;
-}
-/* FIND 1 ENDS */
-
-.find {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 /* FIND 2 STARTS */
 .loc-date-select-container {
   border: 2px solid rgba(255, 255, 255, 0.3);
@@ -108,9 +67,6 @@ input[type="radio"] {
   background: #202123;
   border: none !important;
   color: var(--input-color);
-  option {
-    color: rgb(95, 15, 15);
-  }
 }
 .form-select:focus {
   border: var(--primary-accent);

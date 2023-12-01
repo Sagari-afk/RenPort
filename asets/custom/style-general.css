@@ -51,6 +51,47 @@ h3 {
   font-size: 1.125rem;
 }
 
+/* CHOOSE STARTS*/
+.choose {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.radio-b {
+  margin-top: 8.65rem;
+  padding-left: 4.06rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.radio-b label {
+  font-family: Poppins;
+  font-weight: 300;
+  background: none;
+  padding: 0.5rem 1rem;
+
+  border-radius: 1.25rem !important;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.radio-b .active {
+  background: var(--primary-accent) !important;
+  border: 0rem;
+}
+
+.find {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* CHOOSE ENDS */
+
 /* NAV STARTS */
 nav {
   border-radius: 0.625rem;
