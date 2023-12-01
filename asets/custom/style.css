@@ -1,12 +1,12 @@
 /* MAIN STARTS */
 .main {
   color: white;
-  margin-top: 239px;
+  margin-top: 10.12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 48px;
+  gap: 3rem;
 }
 .main * {
   text-align: center;
@@ -14,16 +14,16 @@
 .button-see-rent {
   background: none !important;
   display: flex;
-  gap: 24px;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
-  border-radius: 99px;
-  padding: 16px 36px;
+  border-radius: 6.1875rem;
+  padding: 1rem 2.25rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 .button-see-rent p {
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .button-see-rent:hover {
   border-color: var(--primary-accent);
@@ -37,11 +37,11 @@
   flex-direction: column;
 }
 .radio-b {
-  margin-top: 157px;
-  padding-left: 65px;
+  margin-top: 8.65rem;
+  padding-left: 4.06rem;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: flex-start;
 }
 input[type="radio"] {
@@ -54,49 +54,48 @@ input[type="radio"] {
   font-family: Poppins;
   font-weight: 300;
   background: none;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
 
-  border-radius: 20px !important;
+  border-radius: 1.25rem !important;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
 .radio-b > .active {
   background: var(--primary-accent);
-  border: 0px;
+  border: 0rem;
 }
 /* FIND 1 ENDS */
 
 .find {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 /* FIND 2 STARTS */
 .loc-date-select-container {
   border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 67px; /* inner border-radius (59px) + self padding (8px) */
-  padding: 8px;
+  border-radius: 4.6875rem; /* inner border-radius (59px) + self padding (8px) */
+  padding: 1rem;
 }
 .loc-date-select {
   display: flex;
   align-items: stretch;
-  padding: 16px;
-  gap: 9px;
+  padding: 1rem;
+  gap: 0.56rem;
 
-  border-radius: 59px;
+  border-radius: 3.688rem;
   background: rgba(255, 255, 255, 0.05);
   font-family: Poppins;
-  font-weight: 300;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #fff;
 }
 .loc-date-select div {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
   flex-direction: column;
   width: 100%;
   justify-content: center;
-  padding: 17px;
+  padding: 1.063rem;
 }
 .form-select {
   -webkit-appearance: none;
@@ -163,35 +162,35 @@ input:focus {
 input[type="date"]::-webkit-calendar-picker-indicator {
   background: none;
   background-image: url("/asets/imgs/calendar-icon.png");
-  height: 20px;
-  width: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 /* SECTION 2 STARTS (CARDS) */
 .section-2 {
-  margin-top: 86px;
+  margin-top: 5.375rem;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 3rem;
 }
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
 }
 .row1,
 .row2 {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .card {
-  border-radius: 15.75px;
+  border-radius: 0.984rem;
   width: calc(100% / 3);
   border: none;
   background: rgba(243, 243, 243, 1);
 
-  padding: 31.5px;
+  padding: 1.969rem;
 }
 .text-in-card {
   display: flex;
@@ -201,10 +200,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-in-card > p {
   color: var(--primary-accent);
   font-family: Space Grotesk;
-  font-size: 21px;
+  font-size: 1.313rem;
 }
 .card img {
-  margin: -31.5px;
+  margin: -1.969rem;
 }
 
 /* ABOUT */
@@ -213,10 +212,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: flex;
   justify-content: space-between;
 
-  margin-top: 138px;
+  margin-top: 8.625rem;
 }
 .section-3 > div > p {
-  width: 635px;
+  width: 39.688rem;
   align-items: center;
   margin: 0;
 }
@@ -225,25 +224,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #141517;
 
   font-family: Poppins;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* ASK US STARTS*/
 .section-4 {
-  margin-top: 87px !important;
+  margin-top: 5.438rem !important;
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
 }
 .section-4 h1 {
   color: #fff;
-  padding: 37px;
-  margin-left: 50px;
+  padding: 2.313rem;
+  margin-left: 3.125rem;
 }
 
 .ask-us-form {
-  padding: 8px;
+  padding: 0.5rem;
   width: 46%;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 .ask-us-form form {
@@ -251,13 +250,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  gap: 12px;
+  gap: 0.75rem;
 }
 .ask-us-form form div {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: rgba(255, 255, 255, 0.08);
   display: flex;
-  padding: 10px;
+  padding: 0.625rem;
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
@@ -274,11 +273,11 @@ textarea:focus {
 }
 .ask-us-form form div label {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .ask-us-form form div input,
 .ask-us-form form div textarea {
   color: rgba(254, 254, 254, 0.5);
-  margin-top: 4px;
+  margin-top: 0.25rem;
 }
 /* ASK US ENDS */
