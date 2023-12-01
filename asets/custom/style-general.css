@@ -1,0 +1,114 @@
+:root {
+  --primary-accent: #39a4f2;
+  --main-dark: #141517;
+  --main-light: #f3f3f3;
+  --input-color: rgba(239, 239, 239, 0.5);
+  --form-background: rgba(255, 255, 255, 0.05);
+}
+.bg-dark-cast {
+  background: var(--main-dark);
+}
+.bg-primary-cast {
+  background: var(--primary-accent);
+}
+h1 {
+  font-family: "Space Grotesk";
+  font-size: 68px !important;
+}
+h2 {
+  color: #404345;
+  font-family: "Space Grotesk";
+  font-size: 42px;
+}
+h3 {
+  font-family: Poppins;
+  font-size: 48px;
+  color: #404345;
+  margin: 0;
+}
+.secundary-text {
+  font-family: "Space Grotesk";
+  font-size: 24px !important;
+}
+.border-bn {
+  border-radius: 0px 0px 48px 48px;
+  padding-bottom: 100px;
+}
+.btn-primary-cast {
+  background: var(--primary-accent) !important;
+  border-radius: 32px !important;
+
+  padding: 6px 24px;
+}
+.btn-primary-cast:hover {
+  filter: brightness(86%);
+  background: none;
+}
+.btn-primary-cast > * {
+  color: #fff;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 18px;
+}
+
+/* NAV STARTS */
+nav {
+  border-radius: 10px;
+  background: var(--main-dark);
+  backdrop-filter: blur(8px);
+
+  padding: 8px !important;
+  padding-top: 22px !important;
+  gap: 8px;
+  font-family: Poppins;
+  font-size: 18px;
+}
+nav > * {
+  padding: 4px;
+  color: white;
+}
+nav a {
+  color: white !important;
+  padding: 6px 24px !important;
+  border-radius: 32px;
+}
+nav > .left {
+  border-radius: 4px;
+  outline: 2px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -2px;
+}
+nav > .center {
+  justify-content: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.05);
+}
+nav > .right {
+  justify-content: right;
+  border-radius: 4px;
+  outline: 2px solid rgba(255, 255, 255, 0.05);
+  outline-offset: -2px;
+}
+/* NAV ENDS */
+
+/* FOOTER STARTS */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b7b7;
+  padding-top: 94px;
+  gap: 28px;
+}
+footer div {
+  display: flex;
+  gap: 54px;
+}
+.links-footer * {
+  margin: 0;
+  align-items: center;
+}
+.links-imgs {
+  display: flex;
+  gap: 17px;
+}
+/* FOOTER ENDS */
