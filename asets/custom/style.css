@@ -5,7 +5,6 @@
   --input-color: rgba(239, 239, 239, 0.5);
   --form-background: rgba(255, 255, 255, 0.05);
 }
-
 .bg-dark-cast {
   background: var(--main-dark);
 }
@@ -186,6 +185,12 @@ input[type="radio"] {
   background: #202123;
   border: none !important;
   color: var(--input-color);
+  option {
+    color: rgb(95, 15, 15);
+  }
+}
+.form-select:focus {
+  border: var(--primary-accent);
 }
 .form-select option {
   background-color: var(--form-background);
@@ -209,7 +214,9 @@ input {
   font-size: 1rem;
   color: rgba(174, 174, 174, 0.5);
   width: 100%;
+  height: 100%;
   margin-top: 0.5rem;
+  display: flex;
 }
 input:focus {
   outline: none;
@@ -233,7 +240,9 @@ input:focus {
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   background: none;
-  /* width: 100%; */
+  background-image: url("/asets/imgs/calendar-icon.png");
+  height: 20px;
+  width: 20px;
 }
 
 /* SECTION 2 STARTS (CARDS) */
@@ -277,7 +286,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* ABOUT */
-.section-3 {
+.section-3,
+.section-4 {
   display: flex;
   justify-content: space-between;
 
@@ -295,3 +305,94 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: Poppins;
   font-size: 24px;
 }
+
+/* ASK US STARTS*/
+.section-4 {
+  margin-top: 87px !important;
+  display: flex;
+  gap: 40px;
+}
+.section-4 h1 {
+  color: #fff;
+  padding: 37px;
+  margin-left: 50px;
+}
+
+.ask-us-form {
+  padding: 8px;
+  width: 46%;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.ask-us-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 12px;
+}
+.ask-us-form form div {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.ask-us-form form div > * {
+  border: none;
+  background: none;
+  width: 100%;
+  font-family: Poppins;
+  padding: 0;
+}
+textarea:focus {
+  outline: none !important;
+}
+.ask-us-form form div label {
+  color: #fff;
+  font-size: 16px;
+}
+.ask-us-form form div input,
+.ask-us-form form div textarea {
+  color: rgba(254, 254, 254, 0.5);
+  margin-top: 4px;
+}
+.blue-btn {
+  background: var(--primary-accent) !important;
+  border-radius: 32px !important;
+
+  padding: 6px 24px;
+  width: 24%;
+}
+.blue-btn button {
+  color: #fff;
+  text-align: center;
+  font-family: Space Grotesk;
+  font-size: 18px;
+}
+/* ASK US ENDS */
+
+/* FOOTER STARTS */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b7b7b7;
+  padding-top: 94px;
+  gap: 28px;
+}
+footer div {
+  display: flex;
+  gap: 54px;
+}
+.links-footer * {
+  margin: 0;
+  align-items: center;
+}
+.links-imgs {
+  display: flex;
+  gap: 17px;
+}
+/* FOOTER ENDS */
