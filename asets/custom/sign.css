@@ -8,6 +8,16 @@ h1 {
   padding: 3.5rem;
 }
 
+.name-surname {
+  display: flex;
+  gap: 0.5rem;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.name-surname * {
+  width: 50%;
+}
+
 .sign-in-form {
   padding: 0.5rem;
   border-radius: 0.75rem;
