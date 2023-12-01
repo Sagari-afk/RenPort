@@ -117,7 +117,7 @@ input:focus {
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
   background: none;
-  background-image: url("/asets/imgs/calendar-icon.png");
+  background-image: url("../imgs/calendar-icon.png");
   height: 1.25rem;
   width: 1.25rem;
 }

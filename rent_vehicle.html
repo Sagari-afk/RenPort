@@ -57,81 +57,72 @@
       </nav>
     </section>
 
+    <!-- STEP 1 -->
     <section class="bg-dark-cast">
-      <div class="container" id="step-1">
+      <div class="step container">
         <div>
-          <h1>Step 1</h1>
-          <h1 style="color: var(--primary-accent)">Choose vehicle</h1>
-        </div>
+          <div class="text-in-step">
+            <h1 style="color: #fff">Step 1</h1>
+            <h1 style="color: var(--primary-accent)">Choose vehicle</h1>
+          </div>
 
-        <form action="/" method="get" class="container find">
-          <div class="col-7 col-7 choose">
-            <div
-              class="btn-group btn-group-toggle radio-b"
-              data-toggle="buttons"
-            >
-              <label class="btn btn-secondary active">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option1"
-                  autocomplete="off"
-                  checked
-                />
-                Car
-              </label>
-              <label class="btn btn-secondary">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option2"
-                  autocomplete="off"
-                />
-                Bike
-              </label>
-              <label class="btn btn-secondary">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option3"
-                  autocomplete="off"
-                />
-                eCar
-              </label>
-              <label class="btn btn-secondary">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option4"
-                  autocomplete="off"
-                  checked
-                />
-                eBike
-              </label>
-              <label class="btn btn-secondary">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option5"
-                  autocomplete="off"
-                  checked
-                />
-                Camping
-              </label>
-              <label class="btn btn-secondary">
-                <input
-                  type="radio"
-                  name="options"
-                  id="option6"
-                  autocomplete="off"
-                  checked
-                />
-                Track toys
-              </label>
+          <form action="/" method="get" class="container find"></form>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEP 2 -->
+    <section class="container step">
+      <div class="text-in-step">
+        <h1>Step 2</h1>
+        <h1 style="color: var(--primary-accent)">Your contact information</h1>
+      </div>
+
+      <div class="your-contact-form">
+        <form>
+          <div class="name-surname">
+            <div class="lab-input">
+              <label for="name-your-contact">Your name</label>
+              <input type="text" id="name-usk-us" placeholder="Jon" />
+            </div>
+
+            <div class="lab-input">
+              <label for="suename-your-contact">Your name</label>
+              <input type="text" id="surname-your-contact" placeholder="Doe" />
             </div>
           </div>
-          <table></table>
+
+          <div class="lab-input">
+            <label for="email-your-contact">Email</label>
+            <input type="email" id="email" placeholder="jondoe@gmail.com" />
+          </div>
+
+          <div class="lab-input">
+            <label for="phone-your-contact">Phone number</label>
+            <input
+              type="text"
+              id="phobe-usk-us"
+              placeholder="+421 948 133 748"
+            />
+          </div>
+
+          <div class="lab-input btn-primary-cast">
+            <button>Submit</button>
+          </div>
         </form>
+      </div>
+    </section>
+
+    <!-- STEP 3 -->
+    <section class="bg-dark-cast">
+      <div class="step container">
+        <div class="text-in-step">
+          <h1 style="color: #fff">Step 3</h1>
+          <h1 style="color: var(--primary-accent)">Check your email</h1>
+          <p class="col-8">
+            We will send you an email with further instructions
+          </p>
+        </div>
       </div>
     </section>
 

@@ -1,0 +1,69 @@
+.step {
+  padding: 5.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text-in-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem;
+}
+.text-in-step p {
+  color: #c6c6c6;
+  font-family: Space Grotesk;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* FORMS */
+.your-contact-form {
+  padding: 0.5rem;
+  width: 64%;
+  border-radius: 0.75rem;
+}
+.your-contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+.lab-input {
+  border-radius: 0.5rem;
+  border: 1px solid rgba(79, 79, 79, 0.3);
+  background: var(--Main-light, #f3f3f3);
+  display: flex;
+  padding: 0.625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.name-surname {
+  display: flex;
+  gap: 0.5rem;
+  align-self: stretch;
+  align-items: flex-start;
+}
+.name-surname * {
+  width: 50%;
+}
+.lab-input > * {
+  border: none;
+  background: none;
+  width: 100%;
+  font-family: Poppins;
+  padding: 0;
+}
+.lab-input label {
+  color: #131517;
+  font-size: 1rem;
+}
+.lab-input input {
+  color: rgba(254, 254, 254, 0.5);
+  margin-top: 0.25rem;
+}
+.btn-primary-cast {
+  padding: 0.8rem !important;
+}
