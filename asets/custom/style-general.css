@@ -93,6 +93,10 @@ input[type="radio"] {
 /* CHOOSE ENDS */
 
 /* NAV STARTS */
+.profile {
+  display: none;
+}
+
 nav {
   border-radius: 0.625rem;
   background: var(--main-dark);

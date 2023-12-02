@@ -1,4 +1,19 @@
 function main() {
+  let signed = false;
+
+  let profile = document.querySelector(".profile");
+  let sign = document.querySelectorAll(".sign");
+
+  if (signed) {
+    profile.style.display = "block";
+    sign.forEach((el) => (el.style.display = "none"));
+    console.log("You are signed");
+  } else {
+    profile.style.display = "none";
+    sign.forEach((el) => (el.style.display = "block"));
+    console.log("You are not signed");
+  }
+
   const btn_find = document.querySelector(".find-button");
   const btn_see_rentals = document.querySelector(".button-see-rent");
   if (btn_find) {
