@@ -120,6 +120,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-image: url("../imgs/calendar-icon.png");
   height: 1.25rem;
   width: 1.25rem;
+  cursor: pointer;
 }
 
 /* SECTION 2 STARTS (CARDS) */
