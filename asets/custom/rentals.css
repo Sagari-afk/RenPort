@@ -23,9 +23,3 @@ p {
   font-size: 1.5rem;
   text-align: center;
 }
-
-#rentals-table-header {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 0 0 1.5rem 1.5rem;
-  margin-bottom: 0.5rem;
-}

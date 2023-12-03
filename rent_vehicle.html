@@ -76,47 +76,88 @@
               <h1 style="color: var(--primary-accent)">Choose vehicle</h1>
             </div>
 
-            <!-- <section class="container rentals-container">
-              <h1 style="color: var(--primary-accent)">Your Rentals</h1>
-        
+            <div class="rentals-container">
               <div class="rentals">
-                <div class="rental">
+                <div class="rental" id="rentals-table-header">
+                  <p>Brand</p>
+                  <p>Model</p>
+                  <p>Price per day</p>
+                  <p>Speed</p>
+                  <p>Fuel type</p>
+                  <p>Tank capacity</p>
+                </div>
+
+                <label class="btn btn-secondary active rental">
+                  <input
+                    type="radio"
+                    name="vehicle-type"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
                   <p>Skoda</p>
                   <p>Fabia</p>
                   <p>Price per day</p>
                   <p>speed</p>
                   <p>Fuel type</p>
                   <p>tank capacity</p>
-                  <button class="delete">DELETE</button>
-                </div>
-        
-                <div class="rental">
+                </label>
+
+                <label class="btn btn-secondary rental">
+                  <input
+                    type="radio"
+                    name="vehicle-type"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
                   <p>Skoda</p>
                   <p>Fabia</p>
                   <p>Price per day</p>
                   <p>speed</p>
                   <p>Fuel type</p>
                   <p>tank capacity</p>
-                  <button class="delete">DELETE</button>
-                </div>
-        
-                <div class="rental">
+                </label>
+
+                <label class="btn btn-secondary rental">
+                  <input
+                    type="radio"
+                    name="vehicle-type"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
                   <p>Skoda</p>
                   <p>Fabia</p>
                   <p>Price per day</p>
                   <p>speed</p>
                   <p>Fuel type</p>
                   <p>tank capacity</p>
-                  <button class="delete">DELETE</button>
-                </div>
+                </label>
+
+                <label class="btn btn-secondary rental">
+                  <input
+                    type="radio"
+                    name="vehicle-type"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <p>Skoda</p>
+                  <p>Fabia</p>
+                  <p>Price per day</p>
+                  <p>speed</p>
+                  <p>Fuel type</p>
+                  <p>tank capacity</p>
+                </label>
               </div>
-            </section> -->
+            </div>
           </div>
         </div>
       </section>
 
       <!-- STEP 2 -->
-      <section class="container step">
+      <section class="container step" id="step1">
         <div class="text-in-step">
           <h1>Step 2</h1>
           <h1 style="color: var(--primary-accent)">Your contact information</h1>

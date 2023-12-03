@@ -20,7 +20,7 @@
 /* FORMS */
 .your-contact-form {
   padding: 0.5rem;
-  width: 64%;
+  width: 64% !important;
   border-radius: 0.75rem;
 }
 .your-contact-form > div {
@@ -67,4 +67,15 @@
 form > .btn-primary-cast {
   border-radius: 2rem !important;
   padding: 0.8rem !important;
+}
+
+.rentals p {
+  padding: 0.625rem;
+  margin: 0;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #fff;
+}
+.step div {
+  width: 100%;
 }
