@@ -37,7 +37,7 @@
 
         <div class="col-4 collapse navbar-collapse center">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./rentals.html">Rentals</a>
             </li>
             <li class="nav-item">
@@ -67,60 +67,104 @@
     </section>
 
     <!-- STEP 1 -->
-    <section class="bg-dark-cast">
-      <div class="step container">
-        <div>
-          <div class="text-in-step">
-            <h1 style="color: #fff">Step 1</h1>
-            <h1 style="color: var(--primary-accent)">Choose vehicle</h1>
-          </div>
+    <form action="" id="rent-vehicle-form">
+      <section class="bg-dark-cast">
+        <div class="step container">
+          <div>
+            <div class="text-in-step">
+              <h1 style="color: #fff">Step 1</h1>
+              <h1 style="color: var(--primary-accent)">Choose vehicle</h1>
+            </div>
 
-          <form action="/" method="get" class="container find"></form>
+            <!-- <section class="container rentals-container">
+              <h1 style="color: var(--primary-accent)">Your Rentals</h1>
+        
+              <div class="rentals">
+                <div class="rental">
+                  <p>Skoda</p>
+                  <p>Fabia</p>
+                  <p>Price per day</p>
+                  <p>speed</p>
+                  <p>Fuel type</p>
+                  <p>tank capacity</p>
+                  <button class="delete">DELETE</button>
+                </div>
+        
+                <div class="rental">
+                  <p>Skoda</p>
+                  <p>Fabia</p>
+                  <p>Price per day</p>
+                  <p>speed</p>
+                  <p>Fuel type</p>
+                  <p>tank capacity</p>
+                  <button class="delete">DELETE</button>
+                </div>
+        
+                <div class="rental">
+                  <p>Skoda</p>
+                  <p>Fabia</p>
+                  <p>Price per day</p>
+                  <p>speed</p>
+                  <p>Fuel type</p>
+                  <p>tank capacity</p>
+                  <button class="delete">DELETE</button>
+                </div>
+              </div>
+            </section> -->
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- STEP 2 -->
-    <section class="container step">
-      <div class="text-in-step">
-        <h1>Step 2</h1>
-        <h1 style="color: var(--primary-accent)">Your contact information</h1>
-      </div>
+      <!-- STEP 2 -->
+      <section class="container step">
+        <div class="text-in-step">
+          <h1>Step 2</h1>
+          <h1 style="color: var(--primary-accent)">Your contact information</h1>
+        </div>
 
-      <div class="your-contact-form">
-        <form>
-          <div class="name-surname">
-            <div class="lab-input">
-              <label for="name-your-contact">Your name</label>
-              <input type="text" id="name-usk-us" placeholder="Jon" />
+        <div class="your-contact-form">
+          <div>
+            <div class="name-surname">
+              <div class="lab-input">
+                <label for="name-your-contact">Your name</label>
+                <input type="text" id="name-your-contact" placeholder="Jon" />
+              </div>
+
+              <div class="lab-input">
+                <label for="surname-your-contact">Your name</label>
+                <input
+                  type="text"
+                  id="surname-your-contact"
+                  placeholder="Doe"
+                />
+              </div>
             </div>
 
             <div class="lab-input">
-              <label for="suename-your-contact">Your name</label>
-              <input type="text" id="surname-your-contact" placeholder="Doe" />
+              <label for="email-your-contact">Email</label>
+              <input
+                type="email"
+                id="email-your-contact"
+                placeholder="jondoe@gmail.com"
+              />
+            </div>
+
+            <div class="lab-input">
+              <label for="phone-your-contact">Phone number</label>
+              <input
+                type="tel"
+                id="phone-your-contact"
+                placeholder="+421 948 133 748"
+              />
+            </div>
+
+            <div class="lab-input btn-primary-cast">
+              <button id="rent-vehicle-submit-btn" type="submit">Submit</button>
             </div>
           </div>
-
-          <div class="lab-input">
-            <label for="email-your-contact">Email</label>
-            <input type="email" id="email" placeholder="jondoe@gmail.com" />
-          </div>
-
-          <div class="lab-input">
-            <label for="phone-your-contact">Phone number</label>
-            <input
-              type="tel"
-              id="phobe-usk-us"
-              placeholder="+421 948 133 748"
-            />
-          </div>
-
-          <div class="lab-input btn-primary-cast">
-            <button>Submit</button>
-          </div>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+    </form>
 
     <!-- STEP 3 -->
     <section class="bg-dark-cast">

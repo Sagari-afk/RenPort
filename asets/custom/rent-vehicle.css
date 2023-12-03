@@ -23,7 +23,7 @@
   width: 64%;
   border-radius: 0.75rem;
 }
-.your-contact-form form {
+.your-contact-form > div {
   display: flex;
   flex-direction: column;
   justify-content: center;

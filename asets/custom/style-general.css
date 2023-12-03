@@ -57,6 +57,9 @@ h3 {
   align-items: flex-start;
   flex-direction: column;
 }
+/* .radio-b > label:focus {
+  background-color: var(--primary-accent) !important;
+} */
 .radio-b {
   margin-top: 8.65rem;
   padding-left: 4.06rem;
@@ -80,9 +83,9 @@ input[type="radio"] {
   border-radius: 1.25rem !important;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
-.radio-b .active {
+.active {
   background: var(--primary-accent) !important;
-  border: 0rem;
+  border: 0;
 }
 
 .find {
