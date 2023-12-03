@@ -1,3 +1,10 @@
+p {
+  margin: 0 !important;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #fff;
+}
+
 .text {
   padding: 5.5rem 0;
   display: flex;
@@ -15,4 +22,10 @@
   font-family: Space Grotesk;
   font-size: 1.5rem;
   text-align: center;
+}
+
+#rentals-table-header {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin-bottom: 0.5rem;
 }

@@ -158,3 +158,23 @@ footer div {
   gap: 1.06rem;
 }
 /* FOOTER ENDS */
+
+/* YOUR RENTALS */
+.rentals-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.rentals {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rental {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.5rem;
+  background: #1f1f1f;
+}

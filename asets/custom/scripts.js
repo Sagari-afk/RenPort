@@ -129,16 +129,9 @@ function radioButtonsChengeChecked(name) {
       }
       if (ele[i].checked) {
         labels[i].classList.add("active");
+        console.log("You have chosed ", labels[i].textContent);
+        // Save this and then send to db in anothe funk
       }
     }
   });
-  // const radioButton = document.getElementById("radioButton");
-  // const label = document.querySelector("label[for='radioButton']");
-  // radioButton.addEventListener("change", function () {
-  //   if (radioButton.checked) {
-  //     label.classList.add("checked-label");
-  //   } else {
-  //     label.classList.remove("checked-label");
-  //   }
-  // });
 }
