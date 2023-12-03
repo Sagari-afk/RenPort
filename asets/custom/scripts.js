@@ -58,7 +58,10 @@ function main() {
 
   // RADIO BUTTONS
   if (document.querySelector(".choose")) {
-    radioButtonsChengeChecked("vehicle-type");
+    radioButtonsChengeChecked("vehicle-type", ".radio-b", ".radio-b-label");
+  }
+  if (document.querySelector(".rentals")) {
+    radioButtonsChengeChecked("vehicle", ".rentals", ".rental");
   }
 }
 
@@ -101,6 +104,15 @@ function findVehicle() {
   }
 }
 
+function submitRentVehicle() {
+  if (document.getElementById("rent-vehicle-form")) {
+    let name = document.getElementById(n).value;
+    let surname = document.getElementById(s).value;
+    let email = document.getElementById(e).value;
+    let phone = document.getElementById(p).value;
+  }
+}
+
 function seeRentals() {
   console.log("See rentals button was pressed");
   window.open("/rentals.html");
@@ -117,19 +129,19 @@ function signToProfile(btn) {
   }
 }
 
-function radioButtonsChengeChecked(name) {
-  let ele = document.getElementsByName("vehicle-type");
-  let radioButtons = document.querySelector(".radio-b");
-  let labels = document.querySelectorAll(".radio-b-label");
+function radioButtonsChengeChecked(name, div, label) {
+  let ele = document.getElementsByName(name);
+  let radioButtons = document.querySelector(div);
+  let labels = document.querySelectorAll(label);
 
   radioButtons.addEventListener("change", function () {
     for (i = 0; i < ele.length; i++) {
-      if (labels[i].classList.contains("active")) {
-        labels[i].classList.remove("active");
+      if (labels[i + 1].classList.contains("active")) {
+        labels[i + 1].classList.remove("active");
       }
       if (ele[i].checked) {
-        labels[i].classList.add("active");
-        console.log("You have chosed ", labels[i].textContent);
+        labels[i + 1].classList.add("active");
+        console.log("You have chosed ", labels[i + 1].textContent);
         // Save this and then send to db in anothe funk
       }
     }
