@@ -238,3 +238,61 @@ textarea:focus {
   margin-top: 0.25rem;
 }
 /* ASK US ENDS */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    margin-top: 4rem;
+    gap: 1.5rem;
+  }
+  .radio-b {
+    margin-top: 4rem;
+    width: 20rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.8rem;
+    padding-left: 0;
+  }
+
+  /* FIND FORM */
+  .loc-date-select {
+    flex-direction: column;
+  }
+
+  /* CARDS */
+  .section-2 div {
+    width: 100%;
+  }
+  .cards div {
+    flex-direction: column;
+  }
+  .text-in-card p {
+    font-size: 1.54788rem;
+  }
+
+  /* ABOUT */
+  .section-3 {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .section-3 p {
+    font-size: 1.2rem;
+    width: 100% !important;
+  }
+
+  /* ASK US */
+  .section-4 {
+    flex-direction: column;
+  }
+  .ask-us {
+    width: 100% !important;
+  }
+  .ask-us h1 {
+    margin: 0;
+    padding: 0 2rem;
+    text-align: center;
+  }
+  .ask-us-form {
+    width: 100%;
+  }
+}

@@ -133,15 +133,20 @@ function radioButtonsChengeChecked(name, div, label) {
   let ele = document.getElementsByName(name);
   let radioButtons = document.querySelector(div);
   let labels = document.querySelectorAll(label);
+  let temp = 0;
+  if (name == "vehicle") {
+    // because in another aplication in rent_vehicle index must be +1
+    temp = 1;
+  }
 
   radioButtons.addEventListener("change", function () {
     for (i = 0; i < ele.length; i++) {
-      if (labels[i + 1].classList.contains("active")) {
-        labels[i + 1].classList.remove("active");
+      if (labels[i + temp].classList.contains("active")) {
+        labels[i + temp].classList.remove("active");
       }
       if (ele[i].checked) {
-        labels[i + 1].classList.add("active");
-        console.log("You have chosed ", labels[i + 1].textContent);
+        labels[i + temp].classList.add("active");
+        console.log("You have chosed ", labels[i + temp].textContent);
         // Save this and then send to db in anothe funk
       }
     }

@@ -11,25 +11,28 @@
 .bg-primary-cast {
   background: var(--primary-accent);
 }
-h1 {
-  font-family: "Space Grotesk";
-  font-size: 4.25rem !important;
+@media (min-width: 1200px) {
+  h1 {
+    font-family: "Space Grotesk";
+    font-size: 4.25rem !important;
+  }
+  h2 {
+    color: #404345;
+    font-family: "Space Grotesk";
+    font-size: 2.625rem;
+  }
+  h3 {
+    font-family: Poppins;
+    font-size: 3rem;
+    color: #404345;
+    margin: 0;
+  }
+  .secundary-text {
+    font-family: "Space Grotesk";
+    font-size: 1.5rem;
+  }
 }
-h2 {
-  color: #404345;
-  font-family: "Space Grotesk";
-  font-size: 2.625rem;
-}
-h3 {
-  font-family: Poppins;
-  font-size: 3rem;
-  color: #404345;
-  margin: 0;
-}
-.secundary-text {
-  font-family: "Space Grotesk";
-  font-size: 1.5rem !important;
-}
+
 .border-bn {
   border-radius: 0rem 0rem 3rem 3rem;
   padding-bottom: 6.37rem;
@@ -100,16 +103,18 @@ input[type="radio"] {
   display: none;
 }
 
-nav {
-  border-radius: 0.625rem;
-  background: var(--main-dark);
+@media (min-width: 768px) {
+  nav {
+    border-radius: 0.625rem;
+    background: var(--main-dark);
 
-  padding: 0.5rem !important;
-  padding-top: 1.35rem !important;
-  gap: 0.625rem;
-  padding: 0.5rem;
-  font-family: Poppins;
-  font-size: 1.125rem;
+    padding: 0.5rem !important;
+    padding-top: 1.35rem !important;
+    gap: 0.625rem;
+    padding: 0.5rem;
+    font-family: Poppins;
+    font-size: 1.125rem;
+  }
 }
 nav div {
   padding: 0.25rem;
@@ -133,6 +138,12 @@ nav > .right {
   justify-content: right;
   outline: 2px solid rgba(255, 255, 255, 0.05);
   outline-offset: -2px;
+}
+.center ul {
+  justify-content: center;
+}
+.right ul {
+  justify-content: flex-end;
 }
 /* NAV ENDS */
 
@@ -188,4 +199,58 @@ footer div {
 }
 .rental input[type="radio"] {
   display: contents;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 3.53794rem;
+  }
+  .secundary-text {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  /* NAV */
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  nav > div {
+    width: 80% !important;
+  }
+  .navbar-brand {
+    margin: 0;
+  }
+  nav > div,
+  .navbar-nav {
+    display: flex;
+    justify-content: center !important;
+  }
+
+  /* FOOTER */
+  footer div {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  .links-footer {
+    gap: 1rem;
+  }
+  .else-footer {
+    gap: 0.5rem;
+  }
+  .links-imgs {
+    flex-direction: row;
+  }
+  footer p {
+    margin: 0;
+  }
 }
