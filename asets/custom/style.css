@@ -244,9 +244,12 @@ textarea:focus {
     margin-top: 4rem;
     gap: 1.5rem;
   }
+  .choose {
+    width: 100%;
+  }
   .radio-b {
     margin-top: 4rem;
-    width: 20rem;
+    width: 100%;
     overflow-x: auto;
     white-space: nowrap;
     padding-bottom: 0.8rem;
