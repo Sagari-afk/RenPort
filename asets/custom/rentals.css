@@ -5,6 +5,10 @@ p {
   color: #fff;
 }
 
+.rental {
+  border-radius: 1.5rem !important;
+  background: #1f1f1f;
+}
 .text {
   padding: 5.5rem 0;
   display: flex;
@@ -22,4 +26,29 @@ p {
   font-family: Space Grotesk;
   font-size: 1.5rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-in p {
+    display: none;
+  }
+  .speed,
+  .fuel-type,
+  .tank-capacity,
+  .delete {
+    display: none;
+  }
+  .text-in-step * {
+    text-align: center;
+    width: 100% !important;
+  }
+  .rental * {
+    font-size: 0.875rem !important;
+  }
+  .text {
+    padding: 2rem;
+  }
+  .text-in {
+    padding: 1rem;
+  }
 }
