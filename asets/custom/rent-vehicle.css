@@ -18,11 +18,14 @@
 }
 
 /* FORMS */
-.your-contact-form {
-  padding: 0.5rem;
-  width: 64% !important;
-  border-radius: 0.75rem;
+@media only screen and (min-width: 768px) {
+  .your-contact-form {
+    padding: 0.5rem;
+    width: 64% !important;
+    border-radius: 0.75rem;
+  }
 }
+
 .your-contact-form > div {
   display: flex;
   flex-direction: column;
@@ -78,4 +81,27 @@ form > .btn-primary-cast {
 }
 .step div {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .speed,
+  .fuel-type,
+  .tank-capacity,
+  .delete {
+    display: none;
+  }
+  .text-in-step {
+    padding: 2rem;
+  }
+  .step {
+    padding: 1rem 0;
+  }
+
+  .text-in-step * {
+    text-align: center;
+    width: 100% !important;
+  }
+  .your-contact-form {
+    width: 100%;
+  }
 }

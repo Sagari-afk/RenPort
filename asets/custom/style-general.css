@@ -226,7 +226,7 @@ footer div {
     width: 80% !important;
   }
   .navbar-brand {
-    margin: 0;
+    margin: 0 !important;
   }
   nav > div,
   .navbar-nav {
