@@ -66,48 +66,54 @@
       </nav>
     </section>
 
-    <section class="main container col-4">
-      <h1 style="color: var(--primary-accent)">Sign in</h1>
+    <div class="container">
+      <section class="main col-4">
+        <h1 style="color: var(--primary-accent)">Sign in</h1>
 
-      <div class="sign-in-form">
-        <form>
-          <div class="name-surname">
-            <div class="lab-input">
-              <label for="name-your-contact">Your name</label>
-              <input type="text" id="name-usk-us" placeholder="Jon" />
+        <div class="sign-in-form">
+          <form>
+            <div class="name-surname">
+              <div class="lab-input">
+                <label for="name-your-contact">Your name</label>
+                <input type="text" id="name-usk-us" placeholder="Jon" />
+              </div>
+
+              <div class="lab-input">
+                <label for="suename-your-contact">Your name</label>
+                <input
+                  type="text"
+                  id="surname-your-contact"
+                  placeholder="Doe"
+                />
+              </div>
             </div>
 
             <div class="lab-input">
-              <label for="suename-your-contact">Your name</label>
-              <input type="text" id="surname-your-contact" placeholder="Doe" />
+              <label for="email-your-contact">Email</label>
+              <input type="email" id="email" placeholder="jondoe@gmail.com" />
             </div>
-          </div>
 
-          <div class="lab-input">
-            <label for="email-your-contact">Email</label>
-            <input type="email" id="email" placeholder="jondoe@gmail.com" />
-          </div>
+            <div class="lab-input">
+              <label for="phone-your-contact">Phone number</label>
+              <input
+                type="tel"
+                id="phobe-usk-us"
+                placeholder="+421 948 133 748"
+              />
+            </div>
 
-          <div class="lab-input">
-            <label for="phone-your-contact">Phone number</label>
-            <input
-              type="tel"
-              id="phobe-usk-us"
-              placeholder="+421 948 133 748"
-            />
-          </div>
+            <div class="lab-input">
+              <label for="password-sign-in">Password</label>
+              <input type="password" id="password-sign-in" />
+            </div>
 
-          <div class="lab-input">
-            <label for="password-sign-in">Password</label>
-            <input type="password" id="password-sign-in" />
-          </div>
-
-          <div class="lab-input btn-primary-cast">
-            <button id="sign-up-btn">Submit</button>
-          </div>
-        </form>
-      </div>
-    </section>
+            <div class="lab-input btn-primary-cast">
+              <button id="sign-up-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
 
     <!-- FOOTER -->
     <section>
