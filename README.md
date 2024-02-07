@@ -1,2 +1,2 @@
 # RenPort
-This is a semestral work for my university (java and web)
+This is a semestral work for my university (web)
